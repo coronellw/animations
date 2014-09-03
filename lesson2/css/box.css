@@ -1,0 +1,112 @@
+.box {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(211,211,211);
+	color: white;
+	margin: 100px 0;
+}
+
+.box h1 {
+	padding: 50px 0 0 30px;
+}
+
+.original {
+	width: 146px;
+	height: 146px;
+	margin: 100px 0;
+	border: 2px dashed black;
+	position: absolute;
+	background-color: rgb(0,0,0,0)
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+#rotate{
+	transform: rotate(15deg);
+	-o-transform: rotate(15deg);
+	-ms-transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+}
+
+#anchor {
+	-webkit-transform-origin: 0% 100%;
+	-moz-transform-origin: 0% 100%;
+	-ms-transform-origin: 0% 100%;
+	-o-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
+#anchor2 {
+	-webkit-transform-origin: 100% 0%;
+	-moz-transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+	-o-transform-origin: 100% 0%;
+	transform-origin: 100% 0%;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);	
+}
+
+#scale {
+	-webkit-transform: scale(1,1.5);
+	-moz-transform: scale(1,1.5);
+	-ms-transform: scale(1,1.5);
+	-o-transform: scale(1,1.5);
+	transform: scale(1,1.5);
+}
+
+#skew {
+	-webkit-transform: skew(50deg);
+	-moz-transform: skew(50deg);
+	-ms-transform: skew(50deg);
+	-o-transform: skew(50deg);
+	transform: skew(50deg);
+}
+
+#half {
+	-webkit-transform: skewx(50deg) scale(0.5);
+	-moz-transform: skewx(50deg) scale(0.5);
+	-ms-transform: skewx(50deg) scale(0.5);
+	-o-transform: skewx(50deg) scale(0.5);
+	transform: skewx(50deg) scale(0.5);
+}
+
+#translate {
+	-webkit-transform: translatex(400px);
+	-moz-transform: translatex(400px);
+	-ms-transform: translatex(400px);
+	-o-transform: translatex(400px);
+	transform: translatex(400px);
+}
+
+#translatey {
+	-webkit-transform: translatey(30px);
+	-moz-transform: translatey(30px);
+	-ms-transform: translatey(30px);
+	-o-transform: translatey(30px);
+	transform: translatey(30px);
+}
+
+#both {
+	-webkit-transform: translate(45px, -45px);
+	-moz-transform: translate(45px, -45px);
+	-ms-transform: translate(45px, -45px);
+	-o-transform: translate(45px, -45px);
+	transform: translate(45px, -45px);
+}
+
+
+#matrix {
+	transform: matrix(0.9, -0.05, -0.375, 1.375, 0, 0);
+}

@@ -1,0 +1,94 @@
+.box {
+	background-color: rgb(128,0,128);	
+	transition: background-color 2s;
+}
+
+.box:hover{
+	background-color: rgb(0,0,255);
+}
+
+.box:focus{
+	background-color: rgb(255,0,0);
+}
+
+#box{
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+	color: white;
+	
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-ms-transition: -ms-transform 1s;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+}
+
+#box:hover{
+	-webkit-transform: -webkit-translateX(400px) -webkit-skew(90deg) -webkit-scale(0.01);
+	-moz-transform: -moz-translateX(400px) -moz-skew(90deg) -moz-scale(0.01);
+	-ms-transform: -ms-translateX(400px) -ms-skew(90deg) -ms-scale(0.01);
+	-o-transform: -o-translateX(400px) -o-skew(90deg) -o-scale(0.01);
+	transform: translateX(400px) skew(90deg) scale(0.01);
+}
+
+#caja{
+	-webkit-transition: -webkit-transform 2s, width 2s 2s, height 2s 2s;
+	-moz-transition: -moz-transform 2s, width 2s 2s, height 2s 2s;
+	-ms-transition: -ms-transform 2s, width 2s 2s, height 2s 2s;
+	-o-transition: -o-transform 2s, width 2s 2s, height 2s 2s;
+	transition: transform 2s, width 2s 2s, height 2s 2s;
+}
+
+.purple:hover{
+	background-color: rgb(0,0,255);
+}
+
+.blue {
+	background-color: rgb(0,0,255);
+}
+
+.purple {
+	background-color: rgb(128,0,128);
+}
+
+.translate {
+	width: 20px !important;
+	height: 20px !important;
+	-webkit-transform: translateX(400px) rotate(45deg) scale(0.5);
+	-moz-transform: translateX(400px) rotate(45deg) scale(0.5);
+	-ms-transform: translateX(400px) rotate(45deg) scale(0.5);
+	-o-transform: translateX(400px) rotate(45deg) scale(0.5);
+	transform: translateX(400px) rotate(45deg) scale(0.5);
+}
+
+#dismiss {
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	-webkit-transition: -webkit-transform 5s, border-radius 3s ease-out 1s;
+	-moz-transition: -moz-transform 5s, border-radius 3s ease-out 1s;
+	-ms-transition: -ms-transform 5s, border-radius 3s ease-out 1s;
+	-o-transition: -o-transform 5s, border-radius 3s ease-out 1s;
+	transition: transform 5s, border-radius 3s ease-out 1s;
+}
+
+.multi-roll {	
+	-webkit-border-radius: 85px;
+	-moz-border-radius: 85px;
+	-ms-border-radius: 85px;
+	-o-border-radius: 85px;
+	border-radius: 85px;
+	text-transform: capitalize;
+
+	-webkit-transform: -webkit-translateX(800px) -webkit-rotate(1440deg);
+	-moz-transform: -moz-translateX(800px) -moz-rotate(1440deg);
+	-ms-transform: -ms-translateX(800px) -ms-rotate(1440deg);
+	-o-transform: -o-translateX(800px) -o-rotate(1440deg);
+	transform: translateX(800px) rotate(1440deg);
+}
+
+.txt{
+	position: absolute;
+	margin: 65px 0 30px 45px;
+}

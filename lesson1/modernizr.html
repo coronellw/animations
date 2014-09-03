@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/basic.css">
+	<link rel="stylesheet" href="../css/error.css">
+	<script src="../js/modernizr.custom.38095.js"></script>
+</head>
+<body>
+	<div id="unsupportedBrowser">
+		<div id="dismiss"><span>x</span></div>
+		<div id="warningText">Oh no! Your browser doesn't support CSS3 animations! Please download one of the following modern browsers in order to see what you're missing!
+			<ul>
+				<li><a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a></li>
+				<li><a href="http://www.google.com/chrome">Chrome</a></li>
+				<li><a href="http://www.apple.com/safari/download">Safari</a></li>
+				<li><a href="http://www.opera.com">Opera</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<h1>EJEMPLO DE MODERNIZR</h1>
+
+	<button onclick="addUnsupportedClass()">Add unsupported class</button>
+	<br>
+	<a href="../index.html">Back to index</a>
+
+	<script type="text/javascript">
+		window.onload=setup;
+		function setup(){
+			var dismiss = document.getElementById("dismiss");
+			dismiss.onclick = hide;
+		}
+
+		function hide(){
+			console.log("fn was correctly called");
+			document.getElementById("unsupportedBrowser").className = "hide";
+		}
+
+		function addUnsupportedClass(){
+			document.getElementsByTagName("body")[0].className = "no-keyframes";
+		}
+	</script>
+</body>
+</html>
